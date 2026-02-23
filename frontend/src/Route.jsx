@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes as RouterRoutes, Route } from "react-router-dom";
 import Homepage from "./pages/homepage";
-
+import AuthPage from "./pages/Authpage";
 
 
 const Routes=()=>{
@@ -9,6 +9,7 @@ const Routes=()=>{
         <BrowserRouter>
         <RouterRoutes>
             <Route path="/" element={<Homepage />} />
+            <Route path="/login" element={<AuthPage />} />
         </RouterRoutes>
         </BrowserRouter>
         </>

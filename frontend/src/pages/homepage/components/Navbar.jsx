@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full ">
-      <div className="flex items-center justify-between px-6 ">
+    <header className="w-full fixed top-0 left-0 bg-white z-50 ">
+   <div className="flex items-center justify-between px-6 pt-10 mx-5 ">
         
         {/* Logo */}
-        <div className="text-lg font-bold tracking-wide">
+        <div className="text-lg font-bold tracking-wide items-center">
           MEDIFLOW_<span className="text-red-500">Ai</span>
         </div>
 
@@ -22,7 +24,10 @@ const Navbar = () => {
         </nav>
 
         {/* Desktop Button */}
-        <button className="hidden md:block bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded-md hover:bg-orange-600 transition">
+
+        <button className="hidden md:block bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded-md hover:bg-orange-600 transition"
+        onClick={() => navigate("/login")}
+        >
           SIGN UP
         </button>
 

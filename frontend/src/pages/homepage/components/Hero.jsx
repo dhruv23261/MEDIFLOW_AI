@@ -2,10 +2,10 @@ import Doctors from "../../../assets/doctors.svg";
 
 const Herosection = () => {
   return (
-    <section className="w-full min-h-[80vh] flex items-center justify-between px-6 py-12 bg-white">
+    <section className="min-h-[90vh] flex items-center justify-between px-6 md:px-16 bg-white">
       
       {/* Left Content */}
-      <div className="max-w-xl text-left">
+      <div className="max-w-xl mt-20 text-left">
         <div className="text-4xl  font-bold leading-tight">
           <h4>Less Chaos. More<span className="text-red-500"> Care.</span>
           </h4>
